@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DexEdu - Modern E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <span>DexEdu</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search for courses...">
+                </div>
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Sign Up Free</button>
+            </div>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Unlock Your Potential With Online Courses</h1>
+            <p class="hero-subtitle">Access over 10,000 online courses from 140+ leading institutions to gain in-demand
+                skills for your career growth.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Explore Courses</button>
+                <button class="btn btn-outline">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="assets/students.jpg" alt="Students learning online">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2 class="section-title">Why Choose DexEdu</h2>
+            <p class="section-subtitle">We provide the best learning experience with flexible learning options and
+                expert instructors.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-book fa-bounce" style="color: #FFD43B;"></i></div>
+                <h3 class="feature-title">Expert Instructors</h3>
+                <p class="feature-desc">Learn from industry experts who share their knowledge and real-world experience
+                    to help you succeed.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-clock fa-spin" style="color: #B197FC;"></i></div>
+                <h3 class="feature-title">Flexible Learning</h3>
+                <p class="feature-desc">Study at your own pace, with lifetime access to courses on mobile and desktop.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-graduation-cap fa-bounce" style="color: #37c848;"></i>
+                </div>
+                <h3 class="feature-title">Verified Certificates</h3>
+                <p class="feature-desc">Earn certificates upon completion to showcase your newly acquired skills.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-people-arrows fa-flip" style="color: #d20f0f;"></i>
+                </div>
+                <h3 class="feature-title">Community Support</h3>
+                <p class="feature-desc">Join a global community of learners and get support whenever you need it.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-arrows-spin fa-spin"></i></div>
+                <h3 class="feature-title">Updated Content</h3>
+                <p class="feature-desc">All courses are regularly updated to ensure you learn the latest technologies
+                    and skills.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-sack-dollar fa-bounce" style="color: #987b2a;"></i>
+                </div>
+                <h3 class="feature-title">Money-back Guarantee</h3>
+                <p class="feature-desc">Not satisfied with a course? Get a full refund within 30 days.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="courses-header">
+            <h2 class="courses-title">Popular Courses</h2>
+            <div class="filter-tabs">
+                <div class="filter-tab active" data-filter="all">All</div>
+                <div class="filter-tab" data-filter="design">Design</div>
+                <div class="filter-tab" data-filter="development">Development</div>
+                <div class="filter-tab" data-filter="business">Business</div>
+                <div class="filter-tab" data-filter="marketing">Marketing</div>
+            </div>
+        </div>
+
+        <div class="courses-grid">
+            <div class="course-card" data-category="development">
+                <img src="assets/webdev.jpg" alt="Web Development" class="course-img">
+                <div class="course-content">
+                    <div class="course-category">Development</div>
+                    <h3 class="course-title">Complete Web Development Bootcamp</h3>
+                    <div class="course-info">
+                        <div class="course-rating">
+                            ⭐ 4.8 (2.4k)
+                        </div>
+                        <div class="course-students">
+                            👨‍🎓 15.6k students
+                        </div>
+                    </div>
+                    <div class="course-divider"></div>
+                    <div class="course-footer">
+                        <div class="course-price">$89.99</div>
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="design">
+                <img src="assets/uiux.jpg" alt="UI UX Design" class="course-img">
+                <div class="course-content">
+                    <div class="course-category">Design</div>
+                    <h3 class="course-title">UI/UX Design Masterclass for Beginners</h3>
+                    <div class="course-info">
+                        <div class="course-rating">
+                            ⭐ 4.9 (1.8k)
+                        </div>
+                        <div class="course-students">
+                            👨‍🎓 12.3k students
+                        </div>
+                    </div>
+                    <div class="course-divider"></div>
+                    <div class="course-footer">
+                        <div class="course-price">$69.99</div>
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="marketing">
+                <img src="assets/digimart.jpg" alt="Digital Marketing" class="course-img">
+                <div class="course-content">
+                    <div class="course-category">Marketing</div>
+                    <h3 class="course-title">Complete Digital Marketing Course</h3>
+                    <div class="course-info">
+                        <div class="course-rating">
+                            ⭐ 4.7 (3.2k)
+                        </div>
+                        <div class="course-students">
+                            👨‍🎓 20.1k students
+                        </div>
+                    </div>
+                    <div class="course-divider"></div>
+                    <div class="course-footer">
+                        <div class="course-price">$79.99</div>
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="business">
+                <img src="assets/bussiness.jpg" alt="Business" class="course-img">
+                <div class="course-content">
+                    <div class="course-category">Business</div>
+                    <h3 class="course-title">Business Management Essentials</h3>
+                    <div class="course-info">
+                        <div class="course-rating">
+                            ⭐ 4.7 (3.2k)
+                        </div>
+                        <div class="course-students">
+                            👨‍🎓 20.1k students
+                        </div>
+                    </div>
+                    <div class="course-divider"></div>
+                    <div class="course-footer">
+                        <div class="course-price">$79.99</div>
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <h2 class="section-title">What Our Students Say</h2>
+            <p class="section-subtitle">Don't just take our word for it. Hear what our students have to say about their
+                learning experience.</p>
+        </div>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-arrows">
+                <div class="arrow" id="prevArrow">←</div>
+                <div class="arrow" id="nextArrow">→</div>
+            </div>
+
+            <div class="testimonial-container" id="testimonialContainer">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The web development course was incredibly comprehensive and practical.
+                        I was able to build real projects that helped me land my first developer job."</p>
+                    <div class="testimonial-author">
+                        <i class="fa-solid fa-user" style="color: #0ceaed;"></i>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I've taken many online courses, but DexEdu's UI/UX design course
+                        stands out. The instructor was engaging and the projects were challenging and relevant."</p>
+                    <div class="testimonial-author">
+                        <i class="fa-solid fa-user" style="color: #0ceaed;"></i>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The digital marketing course transformed my career. I implemented what
+                        I learned and saw immediate results in my company's online presence and lead generation."</p>
+                    <div class="testimonial-author">
+                        <i class="fa-solid fa-user" style="color: #0ceaed;"></i>
+                        <div class="author-info">
+                            <h4>Emma Rodriguez</h4>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The instructor's passion for teaching really shines through. Complex
+                        concepts were broken down into manageable chunks, making learning enjoyable."</p>
+                    <div class="testimonial-author">
+                        <i class="fa-solid fa-user" style="color: #0ceaed;"></i>
+                        <div class="author-info">
+                            <h4>David Kim</h4>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2 class="cta-title">Ready to Start Learning?</h2>
+        <p class="cta-text">Join millions of learners from around the world already learning on DexEdu. Find the right
+            course for you.</p>
+        <a href="#" class="cta-btn">Get Started Free</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <a href="#" class="footer-logo">DexEdu</a>
+                <p class="footer-desc">We're on a mission to provide quality education that is accessible to everyone
+                    around the globe.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Instructors</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Photography</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-text">© 2025 DexEdu. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
